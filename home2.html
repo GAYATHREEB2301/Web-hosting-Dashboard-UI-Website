@@ -46,13 +46,20 @@
     <div class="page-container">
         <!-- Alternate Hero -->
         <section class="hero" style="min-height: 60vh; text-align: center; display: block; padding-top: 120px;">
-            <div class="hero-content" style="max-width: 800px; margin: 0 auto;">
-                <h1>Power Your Digital Presence</h1>
+            <div class="hero-content" style="max-width: 800px; margin: 0 auto; position: relative; z-index: 2;">
+                <h1>Power Your <span class="gradient-text">Digital Presence</span></h1>
                 <p>Lightning fast servers with NVMe SSDs, free SSL, and 24/7 expert support.</p>
                 <div class="cta-group">
                     <a href="hosting.html" class="cta-button">View Plans</a>
                     <a href="dashboard.html" class="btn-outline" style="margin-left: 1rem;">Live Demo</a>
                 </div>
+            </div>
+
+            <!-- Hero Background Blobs for Home 2 -->
+            <div
+                style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100%; height: 100%; overflow: hidden; pointer-events: none; z-index: 1;">
+                <div class="colorful-blob blob-2" style="top: 20%; left: 20%; opacity: 0.4;"></div>
+                <div class="colorful-blob blob-3" style="bottom: 20%; right: 20%; opacity: 0.4;"></div>
             </div>
         </section>
 

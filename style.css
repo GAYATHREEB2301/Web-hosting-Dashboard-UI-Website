@@ -825,6 +825,12 @@ td {
     }
 }
 
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 .blob-1 {
     width: 300px;
     height: 300px;
@@ -844,6 +850,39 @@ td {
     height: 200px;
     background: #06b6d4;
     border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+}
+
+/* Pulse Animation */
+.pulse-dot {
+    width: 10px;
+    height: 10px;
+    background-color: #10b981;
+    border-radius: 50%;
+    position: relative;
+}
+
+.pulse-dot::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #10b981;
+    border-radius: 50%;
+    animation: pulse-ring 2s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+}
+
+@keyframes pulse-ring {
+    0% {
+        transform: scale(0.9);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(2.5);
+        opacity: 0;
+    }
 }
 
 /* Glass Card Enhanced */

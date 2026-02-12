@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HostVibe - Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <div class="auth-container">
+        <div class="auth-box">
+            <!-- Logo in Auth Page since no Header -->
+            <div style="margin-bottom: 2rem; display: flex; justify-content: center;">
+                <a href="index.html" class="logo" style="font-size: 2rem;">
+                    <i class="fa-solid fa-server"></i>
+                    <span>HostVibe</span>
+                </a>
+            </div>
+
+            <h2>Welcome Back!</h2>
+            <p>Login to manage your hosting</p>
+
+            <form action="dashboard.html"> <!-- Redirect for demo purposes -->
+
+                <div class="form-group">
+                    <label>Email Address</label>
+                    <div style="position: relative;">
+                        <i class="fa-regular fa-envelope"
+                            style="position: absolute; left: 1rem; top: 1rem; color: var(--text-light);"></i>
+                        <input type="email" required placeholder="name@example.com" style="padding-left: 2.5rem;">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Password</label>
+                    <div style="position: relative;">
+                        <i class="fa-solid fa-lock"
+                            style="position: absolute; left: 1rem; top: 1rem; color: var(--text-light);"></i>
+                        <input type="password" required placeholder="••••••••" style="padding-left: 2.5rem;">
+                    </div>
+                </div>
+
+                <div style="text-align: right; margin-bottom: 1.5rem;">
+                    <a href="#" style="font-size: 0.9rem; color: var(--primary-color);">Forgot Password?</a>
+                </div>
+
+                <button type="submit" class="auth-btn">Login</button>
+
+            </form>
+
+            <div class="auth-link">
+                Don't have an account? <a href="signup.html">Sign Up</a>
+            </div>
+            <div class="auth-link">
+                <a href="index.html" style="color: var(--text-light); text-decoration: underline;">Back to Home</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

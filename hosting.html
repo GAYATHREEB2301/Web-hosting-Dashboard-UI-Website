@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HostVibe - Hosting</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <a href="index.html" class="logo">
+            <i class="fa-solid fa-server"></i>
+            <span>HostVibe</span>
+        </a>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home 1</a></li>
+                <li><a href="home2.html">Home 2</a></li>
+                <li><a href="domains.html">Domains</a></li>
+                <li><a href="hosting.html" class="active">Hosting</a></li>
+                <li><a href="security.html">Security</a></li>
+                <li><a href="support.html">Support</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-actions">
+            <button class="theme-toggle" aria-label="Toggle Theme">
+                <i class="fa-regular fa-moon"></i>
+            </button>
+            <div class="auth-buttons">
+                <a href="login.html" class="btn-login">Login</a>
+                <a href="signup.html" class="btn-signup">Sign Up</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Content -->
+    <div class="page-container">
+        <div class="section-header" style="text-align: center; display: block;">
+            <h1 class="section-title">Web Hosting Plans</h1>
+            <p style="color: var(--text-light); margin-top: 1rem;">Choose the perfect plan for your website.</p>
+        </div>
+
+        <div
+            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 3rem;">
+
+            <!-- Plan 1 -->
+            <div class="card"
+                style="background: var(--card-bg); padding: 2rem; border-radius: 12px; border: 1px solid var(--border-color); text-align: center; transition: transform 0.3s; box-shadow: var(--shadow);">
+                <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Starter</h3>
+                <p style="color: var(--text-light); margin-bottom: 2rem;">Perfect for personal blogs</p>
+                <div style="font-size: 2.5rem; font-weight: 700; color: var(--primary-color); margin-bottom: 2rem;">
+                    $2.99<span style="font-size: 1rem; color: var(--text-light); font-weight: 400;">/mo</span></div>
+                <ul style="text-align: left; margin-bottom: 2rem; list-style: none;">
+                    <li style="margin-bottom: 0.8rem;"><i class="fa-solid fa-check"
+                            style="color: #10b981; margin-right: 0.5rem;"></i> 1 Website</li>
+                    <li style="margin-bottom: 0.8rem;"><i class="fa-solid fa-check"
+                            style="color: #10b981; margin-right: 0.5rem;"></i> 10 GB Storage</li>
+                    <li style="margin-bottom: 0.8rem;"><i class="fa-solid fa-check"
+                            style="color: #10b981; margin-right: 0.5rem;"></i> Free SSL</li>
+                </ul>
+                <button class="btn-outline" style="width: 100%;">Select Plan</button>
+            </div>
+
+            <!-- Plan 2 -->
+            <div class="card"
+                style="background: var(--card-bg); padding: 2rem; border-radius: 12px; border: 2px solid var(--primary-color); text-align: center; transform: scale(1.05); box-shadow: 0 10px 15px -3px rgba(79, 70, 229, 0.2); position: relative;">
+                <div
+                    style="position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: var(--primary-color); color: white; padding: 0.2rem 1rem; border-radius: 20px; font-size: 0.8rem; font-weight: 600;">
+                    MOST POPULAR</div>
+                <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Pro</h3>
+                <p style="color: var(--text-light); margin-bottom: 2rem;">For growing businesses</p>
+                <div style="font-size: 2.5rem; font-weight: 700; color: var(--primary-color); margin-bottom: 2rem;">
+                    $5.99<span style="font-size: 1rem; color: var(--text-light); font-weight: 400;">/mo</span></div>
+                <ul style="text-align: left; margin-bottom: 2rem; list-style: none;">
+                    <li style="margin-bottom: 0.8rem;"><i class="fa-solid fa-check"
+                            style="color: #10b981; margin-right: 0.5rem;"></i> Unlimited Websites</li>
+                    <li style="margin-bottom: 0.8rem;"><i class="fa-solid fa-check"
+                            style="color: #10b981; margin-right: 0.5rem;"></i> 50 GB NVMe Storage</li>
+                    <li style="margin-bottom: 0.8rem;"><i class="fa-solid fa-check"
+                            style="color: #10b981; margin-right: 0.5rem;"></i> Free Domain</li>
+                    <li style="margin-bottom: 0.8rem;"><i class="fa-solid fa-check"
+                            style="color: #10b981; margin-right: 0.5rem;"></i> Daily Backups</li>
+                </ul>
+                <button class="btn-primary" style="width: 100%;">Select Plan</button>
+            </div>
+
+            <!-- Plan 3 -->
+            <div class="card"
+                style="background: var(--card-bg); padding: 2rem; border-radius: 12px; border: 1px solid var(--border-color); text-align: center; transition: transform 0.3s; box-shadow: var(--shadow);">
+                <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Business</h3>
+                <p style="color: var(--text-light); margin-bottom: 2rem;">Maximum performance</p>
+                <div style="font-size: 2.5rem; font-weight: 700; color: var(--primary-color); margin-bottom: 2rem;">
+                    $12.99<span style="font-size: 1rem; color: var(--text-light); font-weight: 400;">/mo</span></div>
+                <ul style="text-align: left; margin-bottom: 2rem; list-style: none;">
+                    <li style="margin-bottom: 0.8rem;"><i class="fa-solid fa-check"
+                            style="color: #10b981; margin-right: 0.5rem;"></i> All Pro Features</li>
+                    <li style="margin-bottom: 0.8rem;"><i class="fa-solid fa-check"
+                            style="color: #10b981; margin-right: 0.5rem;"></i> 200 GB NVMe Storage</li>
+                    <li style="margin-bottom: 0.8rem;"><i class="fa-solid fa-check"
+                            style="color: #10b981; margin-right: 0.5rem;"></i> Priority Support</li>
+                </ul>
+                <button class="btn-outline" style="width: 100%;">Select Plan</button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <a href="#" class="logo">
+                    <i class="fa-solid fa-server"></i>
+                    <span>HostVibe</span>
+                </a>
+                <p style="margin-top: 1rem; color: var(--text-light);">Premium hosting solutions for developers and
+                    businesses. Fast, secure, and reliable.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home 1</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="domains.html">Domains</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="#">Documentation</a></li>
+                    <li><a href="#">Tutorials</a></li>
+                    <li><a href="#">API Reference</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contact</h3>
+                <ul>
+                    <li><i class="fa-regular fa-envelope"></i> &nbsp; support@hostvibe.com</li>
+                    <li><i class="fa-solid fa-phone"></i> &nbsp; +1 (555) 123-4567</li>
+                    <li><i class="fa-solid fa-location-dot"></i> &nbsp; 123 Server Lane, Cloud City</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 HostVibe. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+        <button class="back-to-top"><i class="fa-solid fa-arrow-up"></i></button>
+    </footer>
+
+</body>
+
+</html>

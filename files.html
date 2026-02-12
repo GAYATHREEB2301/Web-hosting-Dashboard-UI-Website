@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HostVibe - File Manager</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="script.js" defer></script>
+    <style>
+        .file-icon {
+            font-size: 1.2rem;
+            margin-right: 0.8rem;
+            width: 20px;
+            text-align: center;
+        }
+
+        .fa-folder {
+            color: #f59e0b;
+        }
+
+        .fa-file-code {
+            color: #6366f1;
+        }
+
+        .fa-file-image {
+            color: #10b981;
+        }
+
+        .fa-file {
+            color: var(--text-light);
+        }
+
+        .breadcrumb {
+            display: flex;
+            gap: 0.5rem;
+            color: var(--text-light);
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+        }
+
+        .breadcrumb span {
+            cursor: pointer;
+        }
+
+        .breadcrumb span:hover {
+            color: var(--primary-color);
+        }
+
+        .breadcrumb .active {
+            color: var(--text-color);
+            font-weight: 500;
+            cursor: default;
+        }
+
+        .file-row:hover {
+            background-color: rgba(79, 70, 229, 0.05);
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Mobile Header -->
+    <div class="dashboard-mobile-header">
+        <a href="index.html" class="logo">
+            <i class="fa-solid fa-server"></i> <span>HostVibe</span>
+        </a>
+        <button id="mobile-sidebar-toggle" style="background: none; font-size: 1.5rem; color: var(--text-color);">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </div>
+
+    <div class="dashboard-layout">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <a href="index.html" class="logo">
+                    <i class="fa-solid fa-server"></i> <span>HostVibe</span>
+                </a>
+                <button class="theme-toggle" aria-label="Toggle Theme">
+                    <i class="fa-regular fa-moon"></i>
+                </button>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="dashboard.html"><i class="fa-solid fa-gauge-high"></i> Dashboard</a>
+                <a href="files.html" class="active"><i class="fa-solid fa-folder-open"></i> Files</a>
+                <a href="databases.html"><i class="fa-solid fa-database"></i> Databases</a>
+                <a href="account.html"><i class="fa-solid fa-user"></i> Account</a>
+            </nav>
+            <div class="sidebar-footer">
+                <nav class="sidebar-nav">
+                    <a href="login.html" class="logout-btn" style="color: #ef4444;"><i
+                            class="fa-solid fa-right-from-bracket"></i> Logout</a>
+                </nav>
+            </div>
+        </aside>
+
+        <main class="dashboard-main">
+            <div class="section-header">
+                <div>
+                    <h1 class="section-title">File Manager</h1>
+                    <p style="color: var(--text-light);">Manage your website files directly from the browser.</p>
+                </div>
+                <div style="display: flex; gap: 1rem;">
+                    <button class="btn-outline"><i class="fa-solid fa-folder-plus"></i> New Folder</button>
+                    <button class="btn-primary"><i class="fa-solid fa-cloud-arrow-up"></i> Upload</button>
+                </div>
+            </div>
+
+            <div class="card"
+                style="background: var(--card-bg); border-radius: 12px; border: 1px solid var(--border-color); box-shadow: var(--shadow); padding: 1rem;">
+
+                <div class="breadcrumb">
+                    <span><i class="fa-solid fa-house"></i> Home</span> /
+                    <span>public_html</span> /
+                    <span class="active">wp-content</span>
+                </div>
+
+                <div class="table-container" style="box-shadow: none; border: none;">
+                    <table style="width: 100%;">
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Name</th>
+                                <th>Size</th>
+                                <th>Type</th>
+                                <th>Last Modified</th>
+                                <th>Permissions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="file-row">
+                                <td><i class="fa-solid fa-folder file-icon"></i> <strong>themes</strong></td>
+                                <td>-</td>
+                                <td>Directory</td>
+                                <td>Dec 10, 2025</td>
+                                <td>0755</td>
+                            </tr>
+                            <tr class="file-row">
+                                <td><i class="fa-solid fa-folder file-icon"></i> <strong>plugins</strong></td>
+                                <td>-</td>
+                                <td>Directory</td>
+                                <td>Jan 15, 2026</td>
+                                <td>0755</td>
+                            </tr>
+                            <tr class="file-row">
+                                <td><i class="fa-solid fa-folder file-icon"></i> <strong>uploads</strong></td>
+                                <td>-</td>
+                                <td>Directory</td>
+                                <td>Today, 10:30 AM</td>
+                                <td>0755</td>
+                            </tr>
+                            <tr class="file-row">
+                                <td><i class="fa-solid fa-file-code file-icon"></i> index.php</td>
+                                <td>2 KB</td>
+                                <td>PHP File</td>
+                                <td>Nov 20, 2025</td>
+                                <td>0644</td>
+                            </tr>
+                            <tr class="file-row">
+                                <td><i class="fa-solid fa-file-image file-icon"></i> logo.png</td>
+                                <td>45 KB</td>
+                                <td>PNG Image</td>
+                                <td>Dec 05, 2025</td>
+                                <td>0644</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div style="margin-top: 1rem; text-align: right; color: var(--text-light); font-size: 0.9rem;">
+                    Showing 5 of 12 items
+                </div>
+            </div>
+        </main>
+    </div>
+
+</body>
+
+</html>

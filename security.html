@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HostVibe - Security</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <a href="index.html" class="logo">
+            <i class="fa-solid fa-server"></i>
+            <span>HostVibe</span>
+        </a>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home 1</a></li>
+                <li><a href="home2.html">Home 2</a></li>
+                <li><a href="domains.html">Domains</a></li>
+                <li><a href="hosting.html">Hosting</a></li>
+                <li><a href="security.html" class="active">Security</a></li>
+                <li><a href="support.html">Support</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-actions">
+            <button class="theme-toggle" aria-label="Toggle Theme">
+                <i class="fa-regular fa-moon"></i>
+            </button>
+            <div class="auth-buttons">
+                <a href="login.html" class="btn-login">Login</a>
+                <a href="signup.html" class="btn-signup">Sign Up</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Content -->
+    <div class="page-container">
+        <div class="section-header" style="text-align: center; display: block;">
+            <h1 class="section-title">Enterprise-Grade Security</h1>
+            <p style="color: var(--text-light); margin-top: 1rem;">We keep your data safe so you can focus on growth.
+            </p>
+        </div>
+
+        <div
+            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem; margin-top: 4rem;">
+
+            <div class="feature-card" style="text-align: center;">
+                <i class="fa-solid fa-lock" style="font-size: 3rem; color: #10b981; margin-bottom: 1.5rem;"></i>
+                <h3 style="margin-bottom: 1rem;">Free SSL Certificates</h3>
+                <p style="color: var(--text-light);">Every domain hosted with us gets a free Let's Encrypt SSL
+                    certificate, automatically installed and renewed.</p>
+            </div>
+
+            <div class="feature-card" style="text-align: center;">
+                <i class="fa-solid fa-shield-virus" style="font-size: 3rem; color: #f59e0b; margin-bottom: 1.5rem;"></i>
+                <h3 style="margin-bottom: 1rem;">Malware Scanning</h3>
+                <p style="color: var(--text-light);">Our automated systems scan your files daily for malicious code and
+                    vulnerabilities, keeping threats at bay.</p>
+            </div>
+
+            <div class="feature-card" style="text-align: center;">
+                <i class="fa-solid fa-server" style="font-size: 3rem; color: #6366f1; margin-bottom: 1.5rem;"></i>
+                <h3 style="margin-bottom: 1rem;">DDoS Protection</h3>
+                <p style="color: var(--text-light);">Advanced network-level protection mitigates attacks before they
+                    reach your server, ensuring 100% availability.</p>
+            </div>
+
+            <div class="feature-card" style="text-align: center;">
+                <i class="fa-solid fa-clock-rotate-left"
+                    style="font-size: 3rem; color: #ef4444; margin-bottom: 1.5rem;"></i>
+                <h3 style="margin-bottom: 1rem;">Daily Backups</h3>
+                <p style="color: var(--text-light);">We backup your entire account daily. Restore files, databases, or
+                    emails with a single click.</p>
+            </div>
+
+        </div>
+
+        <div
+            style="margin-top: 5rem; text-align: center; background: var(--card-bg); padding: 4rem 2rem; border-radius: 20px; box-shadow: var(--shadow); border: 1px solid var(--border-color);">
+            <h2 style="margin-bottom: 1.5rem;">Secure your business today.</h2>
+            <a href="signup.html" class="btn-primary" style="font-size: 1.2rem; padding: 1rem 2rem;">Get Started Now</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <a href="#" class="logo">
+                    <i class="fa-solid fa-server"></i>
+                    <span>HostVibe</span>
+                </a>
+                <p style="margin-top: 1rem; color: var(--text-light);">Premium hosting solutions for developers and
+                    businesses. Fast, secure, and reliable.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home 1</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="domains.html">Domains</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="#">Documentation</a></li>
+                    <li><a href="#">Tutorials</a></li>
+                    <li><a href="#">API Reference</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contact</h3>
+                <ul>
+                    <li><i class="fa-regular fa-envelope"></i> &nbsp; support@hostvibe.com</li>
+                    <li><i class="fa-solid fa-phone"></i> &nbsp; +1 (555) 123-4567</li>
+                    <li><i class="fa-solid fa-location-dot"></i> &nbsp; 123 Server Lane, Cloud City</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 HostVibe. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+        <button class="back-to-top"><i class="fa-solid fa-arrow-up"></i></button>
+    </footer>
+
+</body>
+
+</html>

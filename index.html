@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HostVibe - Premium Web Hosting</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <a href="index.html" class="logo">
+            <i class="fa-solid fa-server"></i>
+            <span>HostVibe</span>
+        </a>
+
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home 1</a></li>
+                <li><a href="home2.html">Home 2</a></li>
+                <li><a href="domains.html">Domains</a></li>
+                <li><a href="hosting.html">Hosting</a></li>
+                <li><a href="security.html">Security</a></li>
+                <li><a href="support.html">Support</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-actions">
+            <button class="theme-toggle" aria-label="Toggle Theme">
+                <i class="fa-regular fa-moon"></i>
+            </button>
+            <div class="auth-buttons">
+                <a href="login.html" class="btn-login">Login</a>
+                <a href="signup.html" class="btn-signup">Sign Up</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Content -->
+    <div class="page-container">
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Scalable Cloud Hosting for Modern Apps</h1>
+                <p>Deploy your websites in seconds with our high-performance cloud infrastructure. 99.9% uptime
+                    guaranteed.</p>
+                <div class="cta-group">
+                    <a href="dashboard.html" class="cta-button">Go to Dashboard</a>
+                    <a href="signup.html" class="btn-outline" style="margin-left: 1rem;">Get Started</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="gradient-sphere" style="
+                    width: 400px; 
+                    height: 400px; 
+                    background: conic-gradient(from 180deg at 50% 50%, var(--primary-color) 0deg, var(--secondary-color) 180deg, var(--accent-color) 360deg);
+                    border-radius: 50%;
+                    filter: blur(60px);
+                    opacity: 0.6;
+                    position: absolute;
+                    z-index: -1;
+                "></div>
+                <div class="visual-card" style="
+                    background: var(--glass-bg);
+                    backdrop-filter: blur(20px);
+                    border: 1px solid var(--glass-border);
+                    padding: 2rem;
+                    border-radius: 20px;
+                    box-shadow: var(--shadow);
+                    transform: rotate(-5deg);
+                    max-width: 400px;
+                    margin: 0 auto;
+                ">
+                    <div style="display: flex; gap: 10px; margin-bottom: 20px;">
+                        <div style="width: 12px; height: 12px; background: #ef4444; border-radius: 50%;"></div>
+                        <div style="width: 12px; height: 12px; background: #f59e0b; border-radius: 50%;"></div>
+                        <div style="width: 12px; height: 12px; background: #10b981; border-radius: 50%;"></div>
+                    </div>
+                    <div style="font-family: monospace; color: var(--text-color);">
+                        <p><span style="color: var(--primary-color)">$</span> deploy --project my-app</p>
+                        <p style="color: var(--text-light)">> Initializing build...</p>
+                        <p style="color: var(--text-light)">> Optimizing assets...</p>
+                        <p style="color: #10b981">> Deployment Successful!</p>
+                        <br>
+                        <div
+                            style="background: rgba(16, 185, 129, 0.1); padding: 10px; border-radius: 8px; border: 1px solid rgba(16, 185, 129, 0.2);">
+                            <i class="fa-solid fa-check-circle" style="color: #10b981; margin-right: 5px;"></i> Server
+                            Online<br>
+                            <small style="color: var(--text-light)">Low Latency • 24ms</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <a href="#" class="logo">
+                    <i class="fa-solid fa-server"></i>
+                    <span>HostVibe</span>
+                </a>
+                <p style="margin-top: 1rem; color: var(--text-light);">Premium hosting solutions for developers and
+                    businesses. Fast, secure, and reliable.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home 1</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="domains.html">Domains</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="#">Documentation</a></li>
+                    <li><a href="#">Tutorials</a></li>
+                    <li><a href="#">API Reference</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contact</h3>
+                <ul>
+                    <li><i class="fa-regular fa-envelope"></i> &nbsp; support@hostvibe.com</li>
+                    <li><i class="fa-solid fa-phone"></i> &nbsp; +1 (555) 123-4567</li>
+                    <li><i class="fa-solid fa-location-dot"></i> &nbsp; 123 Server Lane, Cloud City</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 HostVibe. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+        <button class="back-to-top"><i class="fa-solid fa-arrow-up"></i></button>
+    </footer>
+
+</body>
+
+</html>
